@@ -184,7 +184,7 @@ jobs:
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Run link checker
-        run: nix develop --command markdown-link-check README.md
+        run: nix develop --command lychee README.md
 
   all-required-checks-complete:
     if: ${{ always() }}
