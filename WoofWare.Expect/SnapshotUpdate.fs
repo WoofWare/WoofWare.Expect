@@ -236,7 +236,7 @@ module internal SnapshotUpdate =
             let startLineIdx = info.StartLine - 1
             let endLineIdx = info.EndLine - 1
 
-            let before = lines.[startLineIdx].Substring (0, info.StartColumn)
+            let before = lines.[startLineIdx].Substring(0, info.StartColumn)
             let after = lines.[endLineIdx].Substring info.EndColumn
 
             let newLines =
@@ -305,7 +305,7 @@ module internal SnapshotUpdate =
             // Range's lines are one-indexed!
             lines.[0 .. source.KeywordRange.EndLine - 2]
             [|
-                lines.[source.KeywordRange.EndLine - 1].Substring (0, source.KeywordRange.EndColumn)
+                lines.[source.KeywordRange.EndLine - 1].Substring(0, source.KeywordRange.EndColumn)
                 + " ["
             |]
             actual |> Seq.map (fun s -> indent + "    " + stringLiteral s) |> Array.ofSeq

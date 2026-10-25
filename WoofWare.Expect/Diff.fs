@@ -49,8 +49,8 @@ type internal UniqueLines<'line when 'line : comparison> =
 module Diff =
     /// Find lines that appear exactly once in a sequence
     let private findUniqueLines (lines : 'line array) : UniqueLines<'line> =
-        let positions = Dictionary<'line, Position> ()
-        let counts = Dictionary<'line, int> ()
+        let positions = Dictionary<'line, Position>()
+        let counts = Dictionary<'line, int>()
 
         lines
         |> Array.iteri (fun i line ->
@@ -203,7 +203,7 @@ module Diff =
                 let anchorMatches = longestIncreasingSubsequence matches |> List.toArray
 
                 // Build diff imperatively
-                let result = ResizeArray<DiffOperation<_>> ()
+                let result = ResizeArray<DiffOperation<_>>()
                 let mutable prevA = 0<pos>
                 let mutable prevB = 0<pos>
 

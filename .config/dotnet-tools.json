@@ -3,19 +3,19 @@
   "isRoot": true,
   "tools": {
     "fantomas": {
-      "version": "7.0.3",
+      "version": "8.1.0",
       "commands": [
         "fantomas"
       ]
     },
     "fsharp-analyzers": {
-      "version": "0.34.1",
+      "version": "0.41.0",
       "commands": [
         "fsharp-analyzers"
       ]
     },
     "woofware.nunittestrunner": {
-      "version": "0.3.9",
+      "version": "0.3.23",
       "commands": [
         "woofware.nunittestrunner"
       ]

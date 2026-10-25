@@ -1,4 +1,4 @@
-﻿namespace WoofWare.Expect
+namespace WoofWare.Expect
 
 open System.Collections.Generic
 open System.IO
@@ -85,7 +85,7 @@ type ExpectBuilder (mode : Mode) =
         {
             Formatter = formatter
             Snapshot = state.Snapshot
-            Actual = actual.Actual |> Option.map (fun f () -> Seq.cast<'elt> (f ()))
+            Actual = actual.Actual |> Option.map (fun f () -> Seq.cast<'elt>(f ()))
         }
 
     /// Combine two `ExpectState`s. The first one is the "expected" snapshot; the second is the "actual".
@@ -476,13 +476,13 @@ type ExpectBuilder (mode : Mode) =
         match state.Snapshot with
         | Some _ ->
             failwith
-                "I don't know how you've managed to do this; please raise an issue against github.com/Smaug123/WoofWare.Expect . Somehow withJsonSerializerOptions has already got a snapshot."
+                "I don't know how you've managed to do this; please raise an issue against github.com/WoofWare/WoofWare.Expect . Somehow withJsonSerializerOptions has already got a snapshot."
         | None ->
 
         match state.Actual with
         | Some _ ->
             failwith
-                "I don't know how you've managed to do this; please raise an issue against github.com/Smaug123/WoofWare.Expect . Somehow withJsonSerializerOptions has already got an expected-value."
+                "I don't know how you've managed to do this; please raise an issue against github.com/WoofWare/WoofWare.Expect . Somehow withJsonSerializerOptions has already got an expected-value."
         | None ->
 
         {

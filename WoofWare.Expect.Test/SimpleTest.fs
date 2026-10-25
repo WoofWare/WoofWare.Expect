@@ -70,7 +70,7 @@ module SimpleTest =
   }"
 
             return
-                Assert.Throws<ExpectException> (fun () ->
+                Assert.Throws<ExpectException>(fun () ->
                     expectWithMockedFilePath ("file.fs", 99) {
                         snapshotJson
                             @"{
@@ -155,7 +155,7 @@ module SimpleTest =
 }"
 
             withJsonSerializerOptions (
-                let options = JsonFSharpOptions.ThothLike().ToJsonSerializerOptions ()
+                let options = JsonFSharpOptions.ThothLike().ToJsonSerializerOptions()
                 options.WriteIndented <- true
                 options
             )

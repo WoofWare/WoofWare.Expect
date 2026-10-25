@@ -1,8 +1,8 @@
 # WoofWare.Expect
 
 [![NuGet version](https://img.shields.io/nuget/v/WoofWare.Expect.svg?style=flat-square)](https://www.nuget.org/packages/WoofWare.Expect)
-[![GitHub Actions status](https://github.com/Smaug123/WoofWare.Expect/actions/workflows/ci.yaml/badge.svg)](https://github.com/Smaug123/WoofWare.Expect/actions?query=branch%3Amain)
-[![License file](https://img.shields.io/github/license/Smaug123/WoofWare.Expect)](./LICENSE)
+[![GitHub Actions status](https://github.com/WoofWare/WoofWare.Expect/actions/workflows/ci.yaml/badge.svg)](https://github.com/WoofWare/WoofWare.Expect/actions?query=branch%3Amain)
+[![License file](https://img.shields.io/github/license/WoofWare/WoofWare.Expect)](./LICENSE)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="logos/logo-dark-background.png">
