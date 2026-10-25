@@ -56,7 +56,7 @@ type internal CompletedSnapshotGeneric<'T> =
 [<RequireQualifiedAccess>]
 module internal CompletedSnapshotGeneric =
     let private defaultJsonSerialiserOptions : JsonSerializerOptions =
-        let options = JsonFSharpOptions.Default().ToJsonSerializerOptions ()
+        let options = JsonFSharpOptions.Default().ToJsonSerializerOptions()
         options.AllowTrailingCommas <- true
         options.WriteIndented <- true
         options
@@ -79,7 +79,7 @@ module internal CompletedSnapshotGeneric =
                 | SnapshotValue.Formatted expected ->
                     let formatter =
                         match state.Formatter with
-                        | None -> fun x -> x().ToString ()
+                        | None -> fun x -> x().ToString()
                         | Some f -> f
 
                     CompletedSnapshotValue.Formatted (expected, formatter)

@@ -27,6 +27,6 @@ module TestSnapshotList =
     let ``list test with formatting`` () =
         expect {
             snapshotList [ "8" ; "9" ; "0" ; "1" ; "2" ]
-            withFormat (fun x -> string<int> (x % 10))
+            withFormat (fun x -> string<int>(x % 10))
             return [ 8..12 ]
         }

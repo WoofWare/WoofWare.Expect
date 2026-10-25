@@ -85,7 +85,7 @@ type ExpectBuilder (mode : Mode) =
         {
             Formatter = formatter
             Snapshot = state.Snapshot
-            Actual = actual.Actual |> Option.map (fun f () -> Seq.cast<'elt> (f ()))
+            Actual = actual.Actual |> Option.map (fun f () -> Seq.cast<'elt>(f ()))
         }
 
     /// Combine two `ExpectState`s. The first one is the "expected" snapshot; the second is the "actual".

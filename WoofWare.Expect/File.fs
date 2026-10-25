@@ -13,7 +13,7 @@ module internal File =
         let file = FileInfo path
 
         let tempFile =
-            Path.Combine (file.Directory.FullName, file.Name + "." + Guid.NewGuid().ToString () + ".tmp")
+            Path.Combine (file.Directory.FullName, file.Name + "." + Guid.NewGuid().ToString() + ".tmp")
 
         try
             File.WriteAllLines (tempFile, lines)
