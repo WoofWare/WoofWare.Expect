@@ -1,7 +1,5 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project Overview
 
 WoofWare.Expect is an F# expect/snapshot testing library (similar to Jest snapshots). The project consists of two main components:
@@ -46,7 +44,7 @@ NUnit's filtering is pretty borked.
 You can't apply filters that contain special characters in the test name (like a space character).
 You have to do e.g. `FullyQualifiedName~singleword` rather than `FullyQualifiedName~single word test`, but this only works on tests whose names are single words to begin with.
 
-Instead of running `dotnet test`, you can perform a build (`dotnet build`) and then run `dotnet woofware.nunittestrunner WoofWare.Expect.Test/bin/Debug/net9.0/WoofWare.Expect.Test.dll`.
+Instead of running `dotnet test`, you can perform a build (`dotnet build`) and then run `dotnet woofware.nunittestrunner WoofWare.Expect.Test/bin/Debug/net10.0/WoofWare.Expect.Test.dll`.
 This is an NUnit test runner which accepts a `--filter` arg that takes the same filter syntax as `dotnet test`, but actually parses it correctly: test names can contain spaces.
 (The most foolproof way to provide test names to WoofWare.NUnitTestRunner is by XML-encoding: e.g. `FullyQualifiedName="MyNamespace.MyTestsClass&lt;ParameterType1%2CParameterType2&gt;.MyTestMethod"`. The `~` query operator is also supported.)
 
